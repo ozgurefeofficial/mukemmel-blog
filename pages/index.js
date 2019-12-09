@@ -4,26 +4,31 @@ import Head from "next/head";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
+// BOOTSTRAP EKLENDI - Nav bar tasarımı yapılıyor
 const Home = ({ posts }) => (
   <div className="container">
     <Head>
-      <title>Home</title>
+      <title>Ana Sayfa</title>
       <link rel="icon" href="/favicon.ico" />
-    </Head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </Head> 
 
     <div className="hero">
-      <h1 className="hero-title">Selman Kahya</h1>
+      <h1 className="hero-title">Özgür Efe</h1>
       <div className="hero-social-links">
-        <Link href="https://medium.com/@selmankahya">
-          <a className="social-link">Medium</a>
+        <Link href="https://github.com/ozgurefeofficial">
+          <a className="social-link">Github</a>
         </Link>
-        <Link href="https://www.twitter.com/selmankahyax">
+        <Link href="https://www.twitter.com/realozgurefe">
           <a className="social-link">Twitter</a>
         </Link>
-        <Link href="https://www.linkedin.com/in/selmankahya">
+        <Link href="https://www.linkedin.com/in/%C3%B6zg%C3%BCr-efe-y%C4%B1lanc%C4%B1-2ba431199/">
           <a className="social-link">LinkedIn</a>
         </Link>
-        <Link href="https://www.instagram.com/selmankahyax/?hl=en">
+        <Link href="https://www.instagram.com/ozgurefe.jpeg">
           <a className="social-link">Instagram</a>
         </Link>
       </div>
@@ -48,6 +53,7 @@ const Home = ({ posts }) => (
         max-width: 650px;
         width: 100%;
         margin: 0 auto;
+        backgroun
       }
 
       .hero {
